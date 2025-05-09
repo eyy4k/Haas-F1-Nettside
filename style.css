@@ -27,11 +27,12 @@ body {color: white; background-color: bisque;}
 .section1 {
     background-image: url(bilder/haas1.png);
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .head1 {
