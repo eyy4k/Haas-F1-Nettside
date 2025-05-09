@@ -15,12 +15,30 @@ img {
     width: 100%;
 }
 
+body {color: white; background-color: bisque;} 
+
 
 
 
 
 
 /* Section 1 */
+
+.section1 {
+    background-image: url();
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1>h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}
 
 /* Footer */
 
