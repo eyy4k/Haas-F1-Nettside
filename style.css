@@ -1,1 +1,40 @@
+:root {
+    --main-color: #8EB1C7
+}
 
+/* minimal css reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+/* Section 1 */
+
+/* Footer */
+
+
+.footer1 {
+    font-size: 1rem;
+    background-color: #E6002C;
+    height: 60px;
+    padding: 20px 0;
+    text-align: center
+    
+}
+
+.footer1>p {
+    color: white;
+    text-decoration: none;
+}
