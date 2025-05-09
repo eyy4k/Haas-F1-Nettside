@@ -25,16 +25,26 @@ body {color: white; background-color: bisque;}
 /* Section 1 */
 
 .section1 {
-    background-image: url();
+    background-image: url(bilder/haas1.png);
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section1>h1 {
+.head1 {
     font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.section1>p
+ {
+    font-size: 1.6rem;
+    margin: 15px 0;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
