@@ -17,6 +17,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 
 
 /* Section 1 */
@@ -47,10 +52,38 @@ body {
     text-shadow: 1px 1px 2px #000000;
 }
 
+/* Knapper */
+
+
+.scrolldiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -10px;
+}
+
+.scroll-btn {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #E6002C;
+    border: 2px solid #E6002C;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #E6002C;
+    color: white;
+}
+
+
 /* Section 2 */
 
 .section2 {
-    background: linear-gradient(270deg, #000000, #ffffff, #000000);
+    background: linear-gradient(270deg, #5d5d5d, #ffffff, #5e5e5e);
     background-size: 600% 600%;
     animation: gradientShift 10s ease infinite;
     min-height: 150vh;
@@ -168,6 +201,7 @@ body {
     background: linear-gradient(90deg, #cacaca, #6f6f6f);
     background-clip: text;
     color: transparent;
+    
 }
 
 
@@ -189,3 +223,4 @@ body {
     color: white;
     text-decoration: none;
 }
+
