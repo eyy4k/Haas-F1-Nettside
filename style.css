@@ -198,11 +198,24 @@ html {
     font-size: 3.3rem;
     margin: 40px 0 40px 0;
     text-align: center;
-    background: linear-gradient(90deg, #cacaca, #6f6f6f);
+    background: linear-gradient(90deg, #3c3c3c, #262626);
     background-clip: text;
     color: transparent;
     
 }
+
+/* section 4 */
+
+.head4 {
+    font-size: 3.3rem;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #3c3c3c, #262626);
+    background-clip: text;
+    color: transparent;
+    
+}
+
 
 /* Footer */
 
