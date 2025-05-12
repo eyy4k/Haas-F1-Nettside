@@ -216,7 +216,7 @@ html {
 
 }
 
-/* Driver 1 */
+/* Driver 1, 2 og Circuit*/
 
 
 .layout {
@@ -241,6 +241,36 @@ html {
     object-fit: cover;
 }
 
+.circuithead {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    
+    
+}
+
+.Circuitimg { 
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacing { margin-bottom: 50px;}
+
+.circuitheader {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 0px 30px 0px;
+    background-color: #c30326e4;
+    color: white;
+    padding: 15px;
+    
+}
 
 .driver1p1 {
     font-size: 1.2rem;
