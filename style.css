@@ -15,7 +15,9 @@ img {
     width: 100%;
 }
 
-body {color: white; background-color: bisque;} 
+body {
+    color: var(--main-color);
+}
 
 
 
@@ -42,13 +44,72 @@ body {color: white; background-color: bisque;}
     text-shadow: 1px 1px 2px #000000;
 }
 
-.section1>p
- {
+.section1>p {
     font-size: 1.6rem;
     margin: 15px 0;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
+}
+
+/* Section 2 */
+
+.section2 {
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.head2 {
+    font-size: 3rem;
+    margin: -0px 0 60px 0;
+    text-align: center;
+}
+
+.drivers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    
+
+}
+
+.drivers>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.driverhead {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Fade In For Section2 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Footer */
@@ -60,7 +121,6 @@ body {color: white; background-color: bisque;}
     height: 60px;
     padding: 20px 0;
     text-align: center
-    
 }
 
 .footer1>p {
