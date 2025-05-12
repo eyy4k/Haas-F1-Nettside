@@ -46,7 +46,7 @@ html {
 
 .section1>p {
     font-size: 1.6rem;
-    margin: 15px 0;
+    margin: 15px 0px 5px 0px;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
@@ -204,16 +204,12 @@ html {
     
 }
 
-
-
-
-
 /* Footer */
 
 
 .footer1 {
     font-size: 1rem;
-    background-color: #E6002C;
+    background-color: #c30326e4;
     height: 60px;
     padding: 20px 0;
     text-align: center
