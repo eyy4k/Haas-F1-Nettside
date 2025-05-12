@@ -140,6 +140,17 @@ body {
     margin-left: 5px;
 }
 
+/* section 3 */
+
+.head3 {
+    font-size: 3.5rem;
+    margin: 30px 0 40px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #ffffff, #6f6f6f);
+    background-clip: text;
+    color: transparent;
+}
+
 
 
 /* Fade In For Section2 */
