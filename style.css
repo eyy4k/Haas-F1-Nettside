@@ -19,8 +19,8 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
-  
+}
+
 
 
 
@@ -170,7 +170,7 @@ html {
     font-size: 1.2rem;
     text-align: center;
     margin: 20px 0;
-    color: #000000;
+    color: rgb(255, 255, 255);
     line-height: 1.5;
 }
 
@@ -201,7 +201,7 @@ html {
     background: linear-gradient(90deg, #3c3c3c, #262626);
     background-clip: text;
     color: transparent;
-    
+
 }
 
 /* section 4 */
@@ -213,7 +213,7 @@ html {
     background: linear-gradient(90deg, #3c3c3c, #262626);
     background-clip: text;
     color: transparent;
-    
+
 }
 
 
@@ -232,4 +232,3 @@ html {
     color: white;
     text-decoration: none;
 }
-
