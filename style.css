@@ -54,7 +54,7 @@ body {
     background: linear-gradient(270deg, #000000, #ffffff, #000000);
     background-size: 600% 600%;
     animation: gradientShift 10s ease infinite;
-    height: 150vh;
+    min-height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
