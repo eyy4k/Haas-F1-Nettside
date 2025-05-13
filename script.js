@@ -18,10 +18,28 @@
         appearOnScroll.observe(fader);
     });
 
+
+    // Clickable links with JS //
+    function createLinks() {
+        const links = document.querySelectorAll('.clickable-link');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                const url = link.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+    }
+
+
+
     // Dark Mode //
 
     document.addEventListener("DOMContentLoaded", () => {
         const toggleButton = document.getElementById("toggle-darkmode");
+
+        createLinks(); // Kall funksjonen for å lage klikkbare lenker
       
         if (!toggleButton) return; // Sikkerhet i tilfelle knappen mangler
       

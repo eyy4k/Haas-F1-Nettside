@@ -117,7 +117,7 @@ nav {
     align-items: center;
     background-attachment: fixed;
 
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.8s ease;
 }
 
@@ -319,7 +319,7 @@ nav {
 .race:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-    background-color: #E6002C; 
+    background-color: #E6002C;
     border-radius: 13px;
     cursor: pointer;
 }
@@ -361,7 +361,7 @@ nav {
 .race:hover .head4,
 .race:hover .subtitle,
 .race:hover .date {
-    color: #fff; 
+    color: #fff;
 }
 
 .head4,
