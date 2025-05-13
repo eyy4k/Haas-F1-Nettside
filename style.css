@@ -330,10 +330,10 @@ nav {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.track-map {
-    width: 120px;
-    margin: 30px 0 10px;
-    opacity: 0.5;
+#track-map {
+    margin: 10px 0 25px;
+    width: 40%;
+    border-radius: 20px;
 }
 
 .head4 {
@@ -353,7 +353,7 @@ nav {
     font-size: 20px;
     margin-top: 10px;
     color: #999;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .race:hover .head4,
