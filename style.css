@@ -315,6 +315,14 @@ nav {
     text-align: center;
 }
 
+.race:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    background-color: #E6002C; 
+    border-radius: 13px;
+}
+
+
 .race img {
     width: 100%;
     height: auto;
@@ -345,7 +353,22 @@ nav {
     font-size: 20px;
     margin-top: 10px;
     color: #999;
+    margin-bottom: 15px;
 }
+
+.race:hover .head4,
+.race:hover .subtitle,
+.race:hover .date {
+    color: #fff; 
+}
+
+.head4,
+.subtitle,
+.date {
+    transition: color 0.3s ease;
+}
+
+
 
 /* section 4 */
 
