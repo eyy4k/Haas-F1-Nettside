@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>/* Navbar Kode :) */
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 0;
+            height: 60px;
+            align-items: center;
+        }
+        
+        
+        nav {
+            background-color: #d53131;
+        }
+        
+        nav a,
+        nav button{
+            background-color: inherit;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 15px;
+            border: none;
+            font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        
+        .input {
+            height: 40px;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #8EB1C7;
+            border-radius: 8px; 
+            font-size: 0.9rem;
+            font-family: 'Roboto', sans-serif;
+            outline: none; 
+            transition: all 0.3s ease-in-out;
+        }
+        
+        
+        
+        .input::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+        
+        .navn{
+            color: white;
+            margin: 5px;
+            font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif ; 
+            font-size: 20px;
+        }
+        .fa-user {
+            color: white !important;
+        }
+        
+        .bildeforside {
+            width: 100% !important;
+        }
+        
+        .logoSkrift{
+                font-family: "Bytesized", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                padding: auto;
+                margin-right: auto;
+                margin-top: 5px;
+              }
+              
+        
+        
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: #B10F2E;
+            padding: 8px;
+            min-width: 160px;
+            z-index: 1;
+        
+        }
+        
+        .dropdown-content a {
+            font-size: 15px;
+            padding: 5px;
+            color: white;
+        }
+        
+        .kontakt {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .kontakt li {
+            background: #d53131;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .fa-caret-down.rotate {
+            transform: rotate(360deg);
+            transition: transform 1s ease;
+        }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoSkrift"><a href="index.html" class="logoSkrift"><img src="bilder/haas1.png" alt=""></a></div>
+          
+            <div class="dropdown">
+                <button class="dropbtn">Meny
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="tipsoss.html">Tips Oss</a>
+                    <a href="omoss.html">Om KodeRød</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
