@@ -30,13 +30,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d53131;
+    background-color: white;
     padding: 0 20px;
     height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+#navcolor {
+    background-color: #cb0327;
 }
 
 .haaslogo {
@@ -57,7 +61,7 @@ nav {
 .dropbtn {
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -67,13 +71,13 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #b10f2e;
+    background-color: white;
     min-width: 150px;
     flex-direction: column;
 }
 
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -88,7 +92,7 @@ nav {
 }
 
 .navhead {
-    color: white;
+    color: black;
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -415,7 +419,7 @@ nav {
 .circuithead {
     font-size: 3rem;
     text-align: center;
-    margin: 20px 0px 30px 0px;
+    margin: 25px 0px 30px 0px;
 
 
 }
