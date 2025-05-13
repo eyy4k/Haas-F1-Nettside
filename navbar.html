@@ -1,139 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <style>/* Navbar Kode :) */
+    /* Navbar */
 
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 0;
-            height: 60px;
-            align-items: center;
-        }
-        
-        
-        nav {
-            background-color: #d53131;
-        }
-        
-        nav a,
-        nav button{
-            background-color: inherit;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-size: 1.5rem;
-            padding: 15px;
-            border: none;
-            font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif;
-            font-weight: 500;
-        }
-        
-        .input {
-            height: 40px;
-            width: 200px;
-            padding: 10px;
-            margin: 10px;
-            border: 2px solid #8EB1C7;
-            border-radius: 8px; 
-            font-size: 0.9rem;
-            font-family: 'Roboto', sans-serif;
-            outline: none; 
-            transition: all 0.3s ease-in-out;
-        }
-        
-        
-        
-        .input::placeholder {
-            color: #888;
-            font-style: italic;
-        }
-        
-        .navn{
-            color: white;
-            margin: 5px;
-            font-family: 'Roboto Flex', 'Roboto', Arial, Helvetica, sans-serif ; 
-            font-size: 20px;
-        }
-        .fa-user {
-            color: white !important;
-        }
-        
-        .bildeforside {
-            width: 100% !important;
-        }
-        
-        .logoSkrift{
-                font-family: "Bytesized", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 40px;
-                padding: auto;
-                margin-right: auto;
-                margin-top: 5px;
-              }
-              
-        
-        
-        .dropdown-content {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            background-color: #B10F2E;
-            padding: 8px;
-            min-width: 160px;
-            z-index: 1;
-        
-        }
-        
-        .dropdown-content a {
-            font-size: 15px;
-            padding: 5px;
-            color: white;
-        }
-        
-        .kontakt {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .kontakt li {
-            background: #d53131;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        
-        .fa-caret-down.rotate {
-            transform: rotate(360deg);
-            transition: transform 1s ease;
-        }</style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d53131;
+      padding: 0 20px;
+      height: 60px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .haaslogo {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px; 
+      align-items: center;
+      padding-right: 20px; 
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #b10f2e;
+      min-width: 150px;
+      flex-direction: column;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #8c0c22;
+    }
+
+    .navhead {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .navhead:hover {
+      text-decoration: underline;
+    }
+
+    .marginhead {
+      margin-right: 30px;
+    }
+
+    /* Dark Mode Toggle Button */
+#toggle-darkmode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#toggle-darkmode:hover {
+    background-color: #444;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark-mode .section1 {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .section2 {
+    background: #222;
+}
+
+body.dark-mode .drivers>div {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark-mode .section2p1 {
+    color: #ccc;
+}
+
+body.dark-mode .head1,
+body.dark-mode .head2,
+body.dark-mode .head3,
+body.dark-mode .head4,
+body.dark-mode .driverhead {
+    color: #f1f1f1;
+    background: none;
+}
+
+body.dark-mode .scroll-btn {
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .scroll-btn:hover {
+    background-color: white;
+    color: #222;
+}
+
+body.dark-mode .footer1 {
+    background-color: #111;
+    color: #ccc;
+}
+
+body.dark-mode .footer1 p {
+    color: #ccc;
+}
+
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logoSkrift"><a href="index.html" class="logoSkrift"><img src="bilder/logo2.png" alt=""></a></div>
-          
-            <div class="dropdown">
-                <button class="dropbtn">Meny
-                    <i class="fa-solid fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="tipsoss.html">Tips Oss</a>
-                    <a href="omoss.html">Om KodeRød</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+
+  <nav>
+    <a href="index.html">
+      <img class="haaslogo" src="bilder/logo2.png" alt="Logo">
+    </a>
+
+    <div class="menu">
+      <div class="dropdown">
+        <button class="dropbtn">Circuits ▾</button>
+        <div class="dropdown-content">
+          <a href="circuit.html">Monaco</a>
+          <a href="circuit.html">Spain</a>
+          <a href="circuit.html">Canada</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Drivers ▾</button>
+        <div class="dropdown-content">
+          <a href="driver1.html">Esteban Ocon</a>
+          <a href="driver2.html">Ollie Bearman</a>
+        </div>
+      </div>
+
+      <a href="car.html" class="navhead">Car</a>
+      <a href="sponsors.html" class="navhead marginhead">Sponsors</a>
+
+      <button id="toggle-darkmode">🌙 Toggle Night Mode</button>
+
+    </div>
+  </nav>
+
 </body>
 </html>
