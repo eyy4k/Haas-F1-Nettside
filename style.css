@@ -477,6 +477,7 @@ nav {
 .sponsorbut {
     text-align: center;
     margin-top: 60px;
+    margin-bottom: -10px;
 }
 
 .but4 {
@@ -584,7 +585,7 @@ nav {
 
 .footer1 {
     font-size: 1rem;
-    background-color: #c30326e4;
+    background-color: #af0424;
     height: 60px;
     padding: 20px 0;
     text-align: center
@@ -615,12 +616,6 @@ nav {
 
 #toggle-darkmode:hover {
     background-color: #444;
-}
-
-
-body.dark-mode {
-    background-color: #111;
-    color: #eee;
 }
 
 body.dark-mode .section1 {
@@ -672,7 +667,7 @@ body.dark-mode .footer1 p {
 
 /* Dark mode */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #1a1a1a;
     color: #e0e0e0;
 }
 
@@ -695,17 +690,19 @@ body.dark-mode .scroll-btn:hover {
 }
 
 body.dark-mode .sponsors {
-    background-color: #1c1c1c;
+    background-color: #1a1a1a;
     color: #e0e0e0;
 }
 
-body.dark-mode .sponsors h2 {
-    color: #ff4757;
+body.dark-mode .sponsors h2,
+body.dark-mode .phead3,
+body.dark-mode .psec5 {
+    color: #ffffff;
 }
 
 body.dark-mode .sponsordiv h3 {
     color: #ffffff;
-    border-left: 5px solid #ff4757;
+    border-left: 5px solid #c8102e;;
 }
 
 body.dark-mode .sponsorting {
@@ -715,12 +712,12 @@ body.dark-mode .sponsorting {
 
 
 body.dark-mode .but4 {
-    background-color: #ff4757;
+    background-color: #c8102e;;
     color: #fff;
 }
 
 body.dark-mode .but4:hover {
-    background-color: #c0392b;
+    background-color: #bb0b1a;
 }
 
 
