@@ -412,6 +412,7 @@ nav {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 40px auto;
+    color: black;
 }
 
 .sponsordiv {
@@ -430,6 +431,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    align-items: stretch;
 }
 
 .sponsorting {
@@ -443,6 +445,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .sponsorting:hover {
@@ -671,6 +674,36 @@ body.dark-mode .scroll-btn:hover {
     background-color: #ffffff;
     color: #121212;
 }
+
+body.dark-mode .sponsors {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .sponsors h2 {
+    color: #ff4757;
+}
+
+body.dark-mode .sponsordiv h3 {
+    color: #ffffff;
+    border-left: 5px solid #ff4757;
+}
+
+body.dark-mode .sponsorting {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+
+
+body.dark-mode .but4 {
+    background-color: #ff4757;
+    color: #fff;
+}
+
+body.dark-mode .but4:hover {
+    background-color: #c0392b;
+}
+
 
 
 
