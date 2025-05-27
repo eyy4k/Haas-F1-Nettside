@@ -392,14 +392,18 @@ nav {
     margin: 0 auto;
 }
 
-
-
 .bildetaljer {
     max-width: 500px;
     background-color: #f8f8f8;
     padding: 20px 30px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bildetaljer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(200, 18, 46, 0.5);
 }
 
 .livery-details {
@@ -420,6 +424,7 @@ nav {
 .bildetaljer ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .bildetaljer li {
@@ -427,6 +432,7 @@ nav {
     position: relative;
     padding-left: 35px;
     font-weight: 500;
+    color: #333;
 }
 
 .bildetaljer li::before {
@@ -438,15 +444,61 @@ nav {
     line-height: 1;
 }
 
+.fakta-container {
+    margin-top: 60px;
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.fakta {
+    background-color: #fff;
+    width: 200px;
+    height: 120px;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(200, 18, 46, 0.3), 0 -8px 20px rgba(200, 18, 46, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fakta p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #000000;
+    line-height: 1.3;
+    padding-top: 5px;
+
+}
+
+
+.fakta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(200, 18, 46, 0.6), 0 -20px 30px rgba(200, 18, 46, 0.3);
+}
+
+.faktaikoner{
+    font-size: 2.5rem;
+    margin-top: 15px;
+    color: #c8102e;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.fakta:hover {
+    transform: scale(1.2);
+    color: #9b0b1e;
+}
+
+
 #section4 {
     scroll-margin-top: 120px;
 }
 
-.headline {
-    border-bottom: 5px solid #c8102e;
-    padding-bottom: 10px;
-    display: inline-block;
-}
 
 
 /* section 5 */
