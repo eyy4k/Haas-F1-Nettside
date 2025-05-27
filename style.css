@@ -264,6 +264,10 @@ nav {
     margin-left: 5px;
 }
 
+#section2 {
+    scroll-margin-top: 40px;
+}
+
 /* Fade In For Section2 */
 .fade-in {
     opacity: 0;
@@ -378,6 +382,10 @@ nav {
     background-clip: text;
     color: transparent;
 
+}
+
+#section3 {
+    scroll-margin-top: 40px;
 }
 
 /* Section 4 */
@@ -627,6 +635,11 @@ nav {
     margin: 0 auto 32px auto;
 }
 
+#section5 {
+    scroll-margin-top: 40px;
+}
+
+
 /* Driver 1, 2 og Circuit*/
 
 
@@ -696,8 +709,6 @@ nav {
 #sec2 {
     scroll-margin-top: 80px;
 }
-
-
 
 
 /* Footer */
@@ -832,8 +843,6 @@ body.dark-mode .sponsorting {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
-
-
 body.dark-mode .but4 {
     background-color: #c8102e;
     ;
@@ -841,10 +850,8 @@ body.dark-mode .but4 {
 }
 
 body.dark-mode .but4:hover {
-    background-color: #bb0b1a;
+    background-color: #f7f7f7;
 }
-
-/* Dark Mode -  section 5 */
 
 body.dark-mode .fakta {
 
