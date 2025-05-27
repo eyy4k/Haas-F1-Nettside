@@ -386,23 +386,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 60px;
     flex-wrap: wrap;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.vf25-image {
-    max-width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
 
-.vf25-image:hover {
-    transform: scale(1.03);
-}
 
 .bildetaljer {
     max-width: 500px;
@@ -412,27 +402,50 @@ nav {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.livery-details {
+    max-width: 380px;
+}
+
 .bildetaljer h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
     color: #c8102e;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    letter-spacing: 0.05em;
+    border-bottom: 3px solid #c8102e;
+    padding-bottom: 8px;
+    width: fit-content;
 }
 
 .bildetaljer ul {
-    list-style-type: none;
+    list-style: none;
     padding-left: 0;
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
+}
+
+.bildetaljer li {
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 35px;
+    font-weight: 500;
 }
 
 .bildetaljer li::before {
-    content: "⚙️ ";
-    margin-right: 10px;
+    content: "⚙️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    line-height: 1;
 }
 
 #section4 {
     scroll-margin-top: 120px;
+}
+
+.headline {
+    border-bottom: 5px solid #c8102e;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
 
@@ -758,7 +771,8 @@ body.dark-mode .psec5 {
 
 body.dark-mode .sponsordiv h3 {
     color: #ffffff;
-    border-left: 5px solid #c8102e;;
+    border-left: 5px solid #c8102e;
+    ;
 }
 
 body.dark-mode .sponsorting {
@@ -768,7 +782,8 @@ body.dark-mode .sponsorting {
 
 
 body.dark-mode .but4 {
-    background-color: #c8102e;;
+    background-color: #c8102e;
+    ;
     color: #fff;
 }
 
@@ -777,18 +792,22 @@ body.dark-mode .but4:hover {
 }
 
 /* Dark Mode -  section 5 */
-body.dark-mode .bildetaljer {
-    background-color: #2a2a2a;
-    color: #eee;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
 
-body.dark-mode .bildetaljer li{
-    color: #ffffff;
+
+
+body.dark-mode .bildetaljer {
+    background-color: #1f1f1f;
+    color: #eee;
+    box-shadow: 0 12px 28px rgba(255, 69, 97, 0.3);
 }
 
 body.dark-mode .bildetaljer h2 {
-    color: #c8102e; 
+    color: #ff4561;
+    border-color: #ff4561;
+}
+
+body.dark-mode .bildetaljer li::before {
+    color: #ff4561;
 }
 
 
