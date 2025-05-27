@@ -380,7 +380,63 @@ nav {
 
 }
 
-/* section 4 */
+/* Section 4 */
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.vf25-image {
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.vf25-image:hover {
+    transform: scale(1.03);
+}
+
+.bildetaljer {
+    max-width: 500px;
+    background-color: #f8f8f8;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bildetaljer h2 {
+    font-size: 2rem;
+    color: #c8102e;
+    margin-bottom: 20px;
+}
+
+.bildetaljer ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.bildetaljer li::before {
+    content: "⚙️ ";
+    margin-right: 10px;
+}
+
+#section4 {
+    scroll-margin-top: 120px;
+}
+
+
+/* section 5 */
 
 .head5 {
     font-size: 3.3rem;
@@ -506,58 +562,6 @@ nav {
     line-height: 1.5;
     margin: 0 auto 32px auto;
 }
-
-/* Section 5 */
-
-.car-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.vf25-image {
-    max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.vf25-image:hover {
-    transform: scale(1.03);
-}
-
-.bildetaljer {
-    max-width: 500px;
-    background-color: #f8f8f8;
-    padding: 20px 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.bildetaljer h2 {
-    font-size: 2rem;
-    color: #c8102e;
-    margin-bottom: 20px;
-}
-
-.bildetaljer ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-.bildetaljer li::before {
-    content: "⚙️ ";
-    margin-right: 10px;
-}
-
 
 /* Driver 1, 2 og Circuit*/
 
