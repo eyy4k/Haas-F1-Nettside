@@ -464,7 +464,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     border: 2px solid #e0e0e0;
- }
+}
 
 .fakta p {
     font-weight: 600;
@@ -849,10 +849,8 @@ body.dark-mode .but4:hover {
 body.dark-mode .fakta {
 
     background-color: #2a2a2a;
-   
+
 }
-
-
 
 body.dark-mode .bildetaljer {
     background-color: #1f1f1f;
