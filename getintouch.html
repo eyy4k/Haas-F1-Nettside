@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Haas F1 Team – Get In Touch</title>
+    <link rel="icon" type="image/png" href="bilder/haaslogo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     
+    <nav>
+        <a href="index.html">
+            <img class="haaslogo" src="bilder/logo3.png" alt="Logo">
+        </a>
+
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">Upcoming Circuits ▾</button>
+                <div class="dropdown-content">
+                    <a href="circuit.html">Monaco</a>
+                    <a href="circuit.html#secn2">Spain</a>
+                    <a href="circuit.html#section3">Canada</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Drivers ▾</button>
+                <div class="dropdown-content">
+                    <a href="driver1.html">Esteban Ocon</a>
+                    <a href="driver2.html">Ollie Bearman</a>
+                </div>
+            </div>
+
+            <a href="car.html" class="navhead">Car</a>
+            <a href="sponsors.html" class="navhead marginhead">Sponsors</a>
+
+            <button id="toggle-darkmode">🌙 Toggle Night Mode</button>
+
+        </div>
+    </nav>
+    
+    <section class="getintouchsec">
+        <div class="kontaktdiv">
+        <h1 class="kontakth1">Get In Touch with Haas F1 Team</h1>
+        <form id="kontaktform" class="kontaktform">
+            <label for="navn">Full Name:</label>
+            <input type="text" id="haas-name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="haas-email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="haas-message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status" class="formstatus"></p>
+    </div>
+    </section>
+
+    <footer class="footer1">
+        <p>© 2025 Haas F1 Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -407,6 +407,7 @@ nav {
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .bildetaljer:hover {
@@ -457,6 +458,7 @@ nav {
     gap: 40px;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -639,6 +641,22 @@ nav {
     scroll-margin-top: 40px;
 }
 
+/* Car */
+
+.sec4 {
+    padding: 75px 0px 50px 0px;
+    background-color: #f4f4f4;
+}
+
+.head7 {
+    font-size: 3.3rem;
+    margin: 40px 0 40px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #3c3c3c, #262626);
+    background-clip: text;
+    color: transparent;
+
+}
 
 /* Driver 1, 2 og Circuit*/
 
@@ -726,6 +744,81 @@ nav {
     color: white;
     text-decoration: none;
 }
+
+/* Get In Touch */
+
+.getintouchsec {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+
+}
+
+.kontaktdiv {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.kontakth1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    padding: 15px 0px 15px 0px;
+}
+
+.kontaktform {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontaktform label {
+    margin: 10px 0 5px;
+    color: #000000;
+    padding: 5px 0px 5px 0px;
+}
+
+.kontaktform input,
+.kontaktform textarea {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.kontaktform button {
+    margin: 25px auto -5px auto;
+    padding: 12px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 200px;
+
+}
+
+.kontaktform button:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 0.5px black;
+}
+
+.formstatus {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
 
 
 /* Dark Mode */
@@ -822,7 +915,8 @@ body.dark-mode .scroll-btn:hover {
     color: #121212;
 }
 
-body.dark-mode .sponsors {
+body.dark-mode .sponsors,
+body.dark-mode .getintouchsec {
     background-color: #1a1a1a;
     color: #e0e0e0;
 }
@@ -845,12 +939,12 @@ body.dark-mode .sponsorting {
 
 body.dark-mode .but4 {
     background-color: #c8102e;
-    ;
     color: #fff;
 }
 
 body.dark-mode .but4:hover {
     background-color: #f7f7f7;
+    color: #000;
 }
 
 body.dark-mode .fakta {

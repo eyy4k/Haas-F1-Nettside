@@ -67,6 +67,27 @@
         toggleButton.addEventListener("click", toggleDarkMode);
       });
       
+    // Get In Touch Form //
+
+    document.getElementById('kontaktform').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('navn').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('status');
+
+      if (!name || !email || !message) {
+          status.textContent = "Please fill in all fields.";
+          status.style.color = "yellow";
+          return;
+      }
+
+      status.textContent = "Thank you for contacting Haas F1 Team!";
+      status.style.color = "black";
+
+      this.reset();
+    });
 
       
       
