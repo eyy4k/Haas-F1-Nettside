@@ -230,6 +230,11 @@
         padding-top: 100px;
     }
 
+    .main1, .layout, .getintouchsec, .sponsors, .sec4 {
+        padding-top: 200px;
+
+    }
+
 }
 
 /* Litt Mer Spesielle Regler */
