@@ -1,0 +1,263 @@
+/* ============================= */
+/* ======= MEDIA QUERIES ======= */
+/* ============================= */
+
+
+
+/* Media Quieries for mellom store skjermer) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .head2 {
+        font-size: 2.5rem;
+    }
+
+    .drivers {
+        gap: 100px;
+    }
+
+    .racediv {
+        flex-direction: column;
+    }
+
+    .car-container {
+        justify-content: center;
+    }
+
+    .bildetaljer {
+        max-width: 90%;
+    }
+
+    .fakta {
+        width: 150px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .dropdown-content {
+        right: 0;
+        min-width: 120px;
+    }
+
+   
+}
+
+/* Litt Mindre Skjermstørrelser */
+@media (max-width: 768px) {
+   
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+    
+        .menu {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+    
+
+    .haaslogo {
+        height: 30px;
+    }
+
+    .dropbtn, .navhead, #toggle-darkmode {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+    }
+
+    main {
+        padding-top: 100px; 
+    }
+  
+
+    .fakta:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    footer.footer1 p {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .drivers .clickable-link:nth-child(2) {
+        margin-bottom: 1.5rem;
+    }
+
+    #toggle-darkmode {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 0.8rem;
+        box-sizing: border-box;
+    }
+
+    .drivers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clickable-link {
+        width: 90%;
+        max-width: 100%;
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .clickable-link img {
+        width: 100%;
+        height: auto;
+    }
+
+    .driverhead {
+        font-size: 1.2rem;
+    }
+
+    .section2p1 {
+        font-size: 0.9rem;
+    }
+
+    .car-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .bildetaljer {
+        width: 90%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .fakta-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        text-align: center; 
+        margin: 50px auto;
+    }
+    
+    .fakta {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .driver-number {
+        font-size: 1.3rem; 
+      }
+}
+
+/* Skjermer under 600px */
+@media (max-width: 600px) {
+    .head1, .head2, .head3, .head4, .head5, .head7 {
+        font-size: 2rem;
+    }
+    .section1 > p, .section2p1, .driver1p1 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .drivers {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .drivers > div {
+        width: 90%;
+    }
+
+    .racediv {
+        flex-direction: column;
+    }
+
+    .race {
+        max-width: 90%;
+    }
+
+    .car-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bildetaljer {
+        width: 90%;
+    }
+
+    .fakta-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 1rem;
+    }
+
+    .fakta {
+        flex: none;
+        width: 100%;
+        margin: 0.5rem 0;
+
+        padding: 0.8rem;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+    
+}
+
+/* Litt Mer Spesielle Regler */
+
+@media (max-width: 550px) {
+    .scrolldiv {
+      display: flex;
+      flex-direction: column;
+      gap: 5px; 
+      align-items: center; 
+    }
+  }
+
+
+/* Under 421px */
+@media (max-width: 420px) {
+   
+    .drivers .clickable-link:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+    .fakta {
+        flex: none;
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 421px) {
+    .drivers .clickable-link:nth-child(2) {
+        margin-bottom: 1.5rem;
+    }
+}

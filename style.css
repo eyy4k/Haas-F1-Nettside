@@ -459,6 +459,7 @@ nav {
     justify-content: center;
     display: flex;
     cursor: pointer;
+    
 
 }
 
@@ -1017,3 +1018,4 @@ body.dark-mode .subtitle,
 body.dark-mode .date {
     color: #ccc;
 }
+
