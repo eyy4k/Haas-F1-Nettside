@@ -23,3 +23,4 @@ JavaScript (vanilla)
 
 🚀 How to Run
 Clone the repo:
+https://eyy4k.github.io/Haas-F1-Nettside/
